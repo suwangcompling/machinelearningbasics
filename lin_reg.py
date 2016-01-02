@@ -1,6 +1,6 @@
 """
 Author: Su Wang
-Institution & Copyright: Linguistics Department, University of Texas at Austin
+Institution: Linguistics Department, University of Texas at Austin
 Model: Linear Regression
 Description: Code written in verbose fashion for pedagogical reason
 """
