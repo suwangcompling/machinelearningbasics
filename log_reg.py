@@ -1,6 +1,6 @@
 """
 Author: Su Wang
-Institution & Copyright: Linguistics Department, University of Texas at Austin
+Institution: Linguistics Department, University of Texas at Austin
 Model: Logistic Regression
 Description: Code written in verbose fashion for pedagogical reason
 """
@@ -39,7 +39,7 @@ class Log_Reg(object):
 
     # fminunc optimization
     def fminunc(self):
-        result = sco.fmin(self.cost,x0=self.theta,maxiter=500,full_output=True)
+        result = sco.fmin(self.cost,x0=self.theta,args=(lmd),maxiter=500,full_output=True)
         print 'optimized weights: %s' % result[0]
         print 'optimized cost: %s' % result[1]
         return
