@@ -2,6 +2,7 @@
 Author: Su Wang
 Institution & Copyright: Linguistics Department, University of Texas at Austin
 Model: Logistic Regression
+Description: Code written in verbose fashion for pedagogical reason
 """
 
 import numpy as np
