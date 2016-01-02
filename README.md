@@ -12,16 +12,16 @@ area  num_bedrooms  price
 1985,4,299900  
 ...  
 <code>>>> lr = lin_reg.Lin_Reg('house_price.txt')  
->>> lr.cost()  
-array([ 32.07273388])  
->>> lr.get_weights()  
-array([[ 0.],  
-       [ 0.]])  
->>> lr.grad_desc(0.01,1500)  
->>> lr.get_weights()  
-array([[-3.63029144],  
-       [ 1.16636235]])  
->>> lr.cost()  
-array([ 4.48338826])<\code>
+<code>>>> lr.cost()  
+<code>array([ 32.07273388])  
+<code>>>> lr.get_weights()  
+<code>array([[ 0.],  
+<code>       [ 0.]])  
+<code>>>> lr.grad_desc(0.01,1500)  
+<code>>>> lr.get_weights()  
+<code>array([[-3.63029144],  
+<code>       [ 1.16636235]])  
+<code>>>> lr.cost()  
+<code>array([ 4.48338826])
 
 
