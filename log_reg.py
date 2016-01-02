@@ -31,8 +31,10 @@ class Log_Reg(object):
     # cost function
     def cost(self,theta):
         prediction = np.dot(self.X,theta)
+        regularization = (2.0*m) * np.dot(theta.T,theta)
         J = (1.0/self.m) * (np.dot(np.log(self.sigmoid(prediction)).T,-self.y) - \
-                       np.dot(np.log(1.0-self.sigmoid(prediction)).T,(1-self.y)))
+                       np.dot(np.log(1.0-self.sigmoid(prediction)).T,(1-self.y))) + \
+                       regularization
         return J
 
     # fminunc optimization
