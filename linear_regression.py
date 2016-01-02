@@ -58,7 +58,7 @@ area  num_bedrooms  price
 >>> lr = lin_reg.Lin_Reg('house_price.txt')  
 >>> lr.cost()
 array([ 32.07273388])
-<>>> lr.get_weights()
+>>> lr.get_weights()
 array([[ 0.],
        [ 0.]])
 >>> lr.grad_desc(0.01,1500)
