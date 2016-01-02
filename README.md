@@ -11,6 +11,7 @@ area  num_bedrooms  price
 3000,4,539900  
 1985,4,299900  
 ...  
+<code>
 >>> lr = lin_reg.Lin_Reg('house_price.txt')  
 >>> lr.cost()  
 array([ 32.07273388])  
@@ -23,5 +24,6 @@ array([[-3.63029144],
        [ 1.16636235]])  
 >>> lr.cost()  
 array([ 4.48338826])  
+<\code>
 
 
