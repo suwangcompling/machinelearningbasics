@@ -2,7 +2,7 @@
 Introductory Machine Learning in Python (for tutorial pdf visit suwangcompling.com)
 
 # Linear Regression Usage Example
-File: comma separated house_price.txt
+File: comma separated house_price.txt \n
 area  num_bedrooms  price
 2104,3,399900
 1600,3,329900
