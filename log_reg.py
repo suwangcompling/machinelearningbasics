@@ -56,12 +56,13 @@ File: comma separated admission.txt
 ...
 '''
 >>> lr = Log_Reg('admission.txt')
->>> lr.cost(lr.theta)
+>>> lmd = 1
+>>> lr.cost(lr.theta,lmd)
 array([[ 0.69314718]])
->>> lr.fminunc()
+>>> lr.fminunc((lmd,)) # lmd must be entered as a tuple type
 Optimization terminated successfully.
-         Current function value: 0.203498
-         Iterations: 157
-         Function evaluations: 287
-optimized weights: [-25.16130062   0.20623142   0.20147143]
-optimized cost: 0.20349770159
+         Current function value: 0.496414
+         Iterations: 148
+         Function evaluations: 265
+optimized weights: [-3.89999311  0.03844773  0.03101954]
+optimized cost: 0.496413967243
