@@ -43,12 +43,12 @@ class NN(object): # 3-layered neural network
         self.z2 = np.dot(self.Theta1,self.a1)
         self.a2 = np.concatenate( (np.ones((1,self.m)),self.sigmoid(self.z2)), axis=0)
         self.z3 = np.dot(self.Theta2,self.a2)
-        self.a3 = self.sigmoid(self.z3) # 10*5000 (m=5000)
+        self.a3 = self.sigmoid(self.z3) 
         if printAccuracy == True:
             # prediction & accuracy evaluation step
             result = self.a3.T
             prediction = np.zeros((self.m,1))
-            for i in range(result.shape[0]): # 5000 data points in total
+            for i in range(result.shape[0]): 
                 prediction[i] = np.argmax(result[i])+1 # +1 to convert from 0-index to 1-index
             # compute accuracy (percentage of correct predictions)
             # np.where gives 1 to where prediction gets it right, 0 otherwise
@@ -61,10 +61,10 @@ class NN(object): # 3-layered neural network
     # (y is usually given with, e.g. 1-10 class label, however we'd like it to
     # be represented in vectors. e.g. [0,0,1] for 3)
     def vectorization(self):
-        vec = np.zeros((len(self.y),self.a3.shape[0])) # 5000*10
+        vec = np.zeros((len(self.y),self.a3.shape[0])) 
         for i in range(len(self.y)):
             vec[i][self.y[i]-1] = 1 # turning class labels to vector representation
-        self.yVec = vec.T # such that the vectorized y is of the same shape as a3 (10*5000)
+        self.yVec = vec.T # such that the vectorized y is of the same shape as a3 
         return
 
     # flatten & unflatten parameters
@@ -116,7 +116,7 @@ class NN(object): # 3-layered neural network
             z3 = np.dot(self.Theta2,a2)
             a3 = self.sigmoid(z3)
             # backward propagation step
-            delta3 = self.a3 - self.yVec[:,i].reshape(len(self.yVec[:,i]),1) # make yVec elements 10*1 in dim
+            delta3 = self.a3 - self.yVec[:,i].reshape(len(self.yVec[:,i]),1) 
             delta2 = np.dot((self.Theta2.T[1:]),delta3) * self.sigmoid(z2)
             Delta1 = Delta1 + np.dot(delta2,self.a1.T)
             Delta2 = Delta2 + np.dot(delta3,self.a2.T)
