@@ -61,6 +61,7 @@ class PCA(object):
             plt.gca().add_line(lines.Line2D(xdata=[self.Xnorm[i,0],self.Xrec[i,0]],\
                                             ydata=[self.Xnorm[i,1],self.Xrec[i,1]],\
                                             c='g',lw=1,ls='--'))
+        return
 
 '''
 Usage Example
