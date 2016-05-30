@@ -7,7 +7,7 @@ Description: Code written in verbose fashion for pedagogical reason
 
 import numpy as np
 
-class Lin_Reg(object):
+class Lin_Reg:
 
     # member variables
     dm = None # data matrix: last column is dep. vars
