@@ -8,7 +8,7 @@ import numpy as np
 import scipy.io as scio
 import scipy.optimize as sco
 
-class NN(object): # 3-layered neural network
+class NN: # 3-layered neural network
 
     # member variables
     dm = None # data matrix: last column is dep. vars
