@@ -8,7 +8,7 @@ Description: Code written in verbose fashion for pedagogical reason
 import numpy as np
 import scipy.optimize as sco
 
-class Log_Reg(object):
+class Log_Reg:
 
     # member variables
     dm = None # data matrix: last column is dep. vars
