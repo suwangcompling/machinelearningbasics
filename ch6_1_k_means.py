@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 import random
 import scipy.spatial.distance as scsd
 
-class KMEANS(object):
+class KMEANS:
 
     # member variables
     X = None # data
