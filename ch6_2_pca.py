@@ -9,7 +9,7 @@ import scipy.io as scio
 import matplotlib.pyplot as plt
 from matplotlib import lines
 
-class PCA(object):
+class PCA:
 
     # member variables
     X, Xnorm, Xproj, Xrec = None, None, None, None # data
