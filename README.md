@@ -1,4 +1,4 @@
-# ml
+# machinelearningbasics
 Introductory Machine Learning in Python (for tutorial pdf visit suwangcompling.com).
 
 # Note on Code
