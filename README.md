@@ -6,7 +6,7 @@
 * Note: The code is written in a verbose fashion such that each step is explicitly and clearly demonstrated, in correspondence to the tutorial. (For ''fancier'' code that comes with visualization and coding optimization, consult other blogs/github contributors. The current implementation only aims to make clear the main ideas covered in the tutorial.)  
 Being a linguist, most likely my implementation is not entirely satisfactory. Critical comments are warmly welcome!  
 
-## sklearn-based Code (sklearn indexed, off-the-shelf library)
+## B. sklearn-based Code (sklearn indexed, off-the-shelf library)
 
 
 
