@@ -8,6 +8,7 @@ Being a linguist, most likely my implementation is not entirely satisfactory. Cr
 
 ## B. sklearn-based Code (sklearn indexed, off-the-shelf library)
 
+## C. Theano-based Code (ref. Theano & Deeplearning Documentation)
 
 
 
